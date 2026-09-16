@@ -1,6 +1,6 @@
 # Stage 1 review — the lab has moved safely
 
-Date: 2026-09-16. Status: **awaiting owner review**. All checks below passed.
+Date: 2026-09-16. Status: **approved by owner** with “done, proceed,” after commit `ac22936`. All checks below record the completed Stage 1 checkpoint.
 
 The new working lab is in `open-compute-dash`. We copied **35 files from the current v0.1 working directory**, including its uncommitted improvements, without changing their contents. The original lab and its saved results remain in place. The new reader lets you inspect those results offline while keeping their original meaning.
 

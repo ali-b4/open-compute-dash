@@ -1,0 +1,418 @@
+{
+  "schema_version": "provider-registry-v1",
+  "canonical_model_family": "qwen/qwen3.8-27b",
+  "synthetic": true,
+  "providers": [
+    {
+      "provider_id": "venice",
+      "display_name": "Venice",
+      "enabled": true,
+      "status": "verification_pending",
+      "adapter_type": "openai_chat_completions",
+      "secret_env_var": "VENICE_API_KEY",
+      "endpoint_url": "https://api.venice.ai/api/v1/chat/completions",
+      "model_id": "qwen-3-8-27b",
+      "serving_variant": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "checked_at": null,
+        "reason": "Serving variant has not been revalidated for v0.5."
+      },
+      "evidence": {
+        "access": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming_usage": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "non_thinking": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "context_window_tokens": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "cache_policy": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "structured_output": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "tool_calls": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        }
+      },
+      "pricing": {
+        "config_file": "config/pricing.json",
+        "config_key": "venice",
+        "status": "historical_unverified",
+        "reason": "Reference to copied v0.1 prices only. Current prices, account terms, and usable access have not been checked."
+      }
+    },
+    {
+      "provider_id": "chutes",
+      "display_name": "Chutes",
+      "enabled": true,
+      "status": "verification_pending",
+      "adapter_type": "openai_chat_completions",
+      "secret_env_var": "CHUTES_API_KEY",
+      "endpoint_url": "https://llm.chutes.ai/v1/chat/completions",
+      "model_id": "Qwen/Qwen3.8-27B-TEE",
+      "serving_variant": {
+        "value": "TEE",
+        "status": "configured",
+        "source": "scripts/provider_config.py: configured model ID",
+        "checked_at": "2026-09-16",
+        "reason": "Label inferred from configured model ID; actual serving behavior remains unverified."
+      },
+      "evidence": {
+        "access": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming_usage": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "non_thinking": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "context_window_tokens": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "cache_policy": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "structured_output": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "tool_calls": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        }
+      },
+      "pricing": {
+        "config_file": "config/pricing.json",
+        "config_key": "chutes",
+        "status": "historical_unverified",
+        "reason": "Reference to copied v0.1 prices only. Current prices, account terms, and usable access have not been checked."
+      }
+    },
+    {
+      "provider_id": "darkbloom",
+      "display_name": "Darkbloom",
+      "enabled": true,
+      "status": "verification_pending",
+      "adapter_type": "openai_chat_completions",
+      "secret_env_var": "DARKBLOOM_API_KEY",
+      "endpoint_url": "https://api.darkbloom.dev/v1/chat/completions",
+      "model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
+      "serving_variant": {
+        "value": "4bit-mtp",
+        "status": "configured",
+        "source": "scripts/provider_config.py: configured model ID",
+        "checked_at": "2026-09-16",
+        "reason": "Label inferred from configured model ID; actual serving behavior remains unverified."
+      },
+      "evidence": {
+        "access": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming_usage": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "non_thinking": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "context_window_tokens": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "cache_policy": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "structured_output": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "tool_calls": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        }
+      },
+      "pricing": {
+        "config_file": "config/pricing.json",
+        "config_key": "darkbloom",
+        "status": "historical_unverified",
+        "reason": "Reference to copied v0.1 prices only. Current prices, account terms, and usable access have not been checked."
+      }
+    },
+    {
+      "provider_id": "ionet",
+      "display_name": "io.net",
+      "enabled": true,
+      "status": "verification_pending",
+      "adapter_type": "openai_chat_completions",
+      "secret_env_var": "IONET_API_KEY",
+      "endpoint_url": "https://api.intelligence.io.solutions/api/v1/chat/completions",
+      "model_id": "Qwen/Qwen3.8-27B",
+      "serving_variant": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "checked_at": null,
+        "reason": "Serving variant has not been revalidated for v0.5."
+      },
+      "evidence": {
+        "access": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming_usage": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "non_thinking": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "context_window_tokens": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "cache_policy": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "structured_output": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "tool_calls": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        }
+      },
+      "pricing": {
+        "config_file": "config/pricing.json",
+        "config_key": "ionet",
+        "status": "historical_unverified",
+        "reason": "Reference to copied v0.1 prices only. Current prices, account terms, and usable access have not been checked."
+      }
+    },
+    {
+      "provider_id": "example_lab",
+      "display_name": "Example Lab (synthetic)",
+      "enabled": true,
+      "status": "verification_pending",
+      "adapter_type": "openai_chat_completions",
+      "secret_env_var": "EXAMPLE_LAB_TEST_KEY",
+      "endpoint_url": "https://example-lab.invalid/v1/chat/completions",
+      "model_id": "synthetic/qwen3.8-27b",
+      "serving_variant": {
+        "value": null,
+        "status": "unknown",
+        "source": null,
+        "checked_at": null,
+        "reason": "Fictional endpoint for offline extension tests."
+      },
+      "evidence": {
+        "access": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "streaming_usage": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "non_thinking": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "context_window_tokens": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "cache_policy": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "structured_output": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        },
+        "tool_calls": {
+          "value": null,
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "reason": "Not revalidated for v0.5; inherited observations are historical evidence only."
+        }
+      },
+      "pricing": {
+        "config_file": null,
+        "config_key": null,
+        "status": "unknown",
+        "reason": "Fictional provider; no actual pricing."
+      }
+    },
+    {
+      "provider_id": "pearl",
+      "display_name": "Pearl",
+      "enabled": false,
+      "status": "access_pending"
+    }
+  ]
+}
