@@ -1,0 +1,32 @@
+{
+  "_synthetic_fixture": true,
+  "_fixture_note": "SYNTHETIC TEST FIXTURE. Invented values, not a real provider run.",
+  "provider": "chutes",
+  "provider_model_id": "synthetic-model",
+  "success": true,
+  "request": {
+    "headers": {"Authorization": "PRIVATE_AUTH_HEADER"},
+    "json": {"stream": true, "messages": [{"role": "user", "content": "PRIVATE_PROMPT"}]}
+  },
+  "response": {
+    "body": {
+      "choices": [{"message": {"content": "PRIVATE_ANSWER", "reasoning_content": "PRIVATE_REASONING"}, "finish_reason": "stop"}],
+      "usage": {"prompt_tokens": 100, "completion_tokens": 20}
+    }
+  },
+  "error": {"message": "PRIVATE_ERROR_MESSAGE"},
+  "metadata": {"pricing": {"value": {"input_per_1m_tokens": 9999}}},
+  "metrics": {
+    "success": {"value": true, "source": "measured"},
+    "ttft_seconds": {"value": 0.25, "source": "measured", "unit": "s"},
+    "total_latency_seconds": {"value": 1.5, "source": "measured", "unit": "s"},
+    "output_tokens_per_second": {"value": 16, "source": "estimated", "unit": "tokens/s"},
+    "input_tokens": {"value": 100, "source": "provider-reported", "unit": "tokens"},
+    "output_tokens": {"value": 20, "source": "provider-reported", "unit": "tokens"},
+    "reasoning_tokens": {"value": 5, "source": "provider-reported", "unit": "tokens"},
+    "input_cost": {"value": null, "source": "unavailable", "reason": "PRIVATE_REASON"},
+    "output_cost": {"value": 0, "source": "estimated"},
+    "request_cost": {"value": 0.123456789, "source": "estimated", "unit": "USD", "note": "PRIVATE_NOTE"},
+    "error_message": {"value": "PRIVATE_ERROR_METRIC", "source": "measured"}
+  }
+}

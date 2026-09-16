@@ -1,1 +1,20 @@
 /provider-lab-v0.5-prd-revised.md
+
+# Local credentials; only the placeholder template belongs in source control.
+.env
+.env.*
+!.env.example
+
+# Private observations, draft exports, and provider/account evidence.
+/results/
+/exports/
+/config/pricing-history/
+/config/provider-catalogs/
+
+# Python environments and generated files.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store

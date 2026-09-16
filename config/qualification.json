@@ -1,0 +1,180 @@
+{
+  "checked_at": "2026-09-15",
+  "scope": "Initial exact-endpoint qualification; not exhaustive compliance or security testing",
+  "documentation": "notes/provider-qualification.md",
+  "providers": {
+    "venice": {
+      "provider_model_id": "qwen-3-8-27b",
+      "catalog_source": "config/pricing-history/20260915T141555Z-c6a42dba/venice.json",
+      "authentication": {
+        "value": "Bearer API key",
+        "basis": "observed"
+      },
+      "streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "non_streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "structured_output_example": {
+        "value": true,
+        "basis": "observed; strict enforcement not established"
+      },
+      "forced_named_tool_choice": {
+        "value": true,
+        "basis": "observed; returned the requested function name and arguments in one saved example"
+      },
+      "automatic_tool_choice": {
+        "value": null,
+        "reason": "Not separately probed"
+      },
+      "batch_inference_api": {
+        "value": false,
+        "basis": "documented",
+        "evidence_state": "not_supported",
+        "scope": "OpenAI-compatible Batch API; migration guide explicitly says not yet available",
+        "source": "https://docs.venice.ai/guides/getting-started/openai-migration",
+        "checked_at": "2026-09-15"
+      },
+      "serving_region": {
+        "value": null,
+        "reason": "Not returned in normal response records"
+      },
+      "rate_limits": {
+        "value": null,
+        "reason": "Consult per-response headers and qualification notes; no universal entitlement inferred"
+      },
+      "capability_evidence": "results/qualification/20260915T141606Z-48abc627/summary.json",
+      "manual_review": "notes/qualification/venice.md"
+    },
+    "chutes": {
+      "provider_model_id": "Qwen/Qwen3.8-27B-TEE",
+      "catalog_source": "config/pricing-history/20260915T141555Z-c6a42dba/chutes.json",
+      "authentication": {
+        "value": "Bearer API key",
+        "basis": "observed"
+      },
+      "streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "non_streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "structured_output_example": {
+        "value": true,
+        "basis": "observed; strict enforcement not established"
+      },
+      "forced_named_tool_choice": {
+        "value": true,
+        "basis": "observed; returned the requested function name and arguments in one saved example"
+      },
+      "automatic_tool_choice": {
+        "value": null,
+        "reason": "Not separately probed"
+      },
+      "batch_inference_api": {
+        "value": null,
+        "reason": "No exact-endpoint batch API verified"
+      },
+      "serving_region": {
+        "value": null,
+        "reason": "Not returned in normal response records"
+      },
+      "rate_limits": {
+        "value": null,
+        "reason": "Consult per-response headers and qualification notes; no universal entitlement inferred"
+      },
+      "capability_evidence": "results/qualification/20260915T141606Z-48abc627/summary.json",
+      "manual_review": "notes/qualification/chutes.md"
+    },
+    "darkbloom": {
+      "provider_model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
+      "catalog_source": "config/pricing-history/20260915T141555Z-c6a42dba/darkbloom.json",
+      "authentication": {
+        "value": "Bearer API key",
+        "basis": "observed"
+      },
+      "streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "non_streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "structured_output_example": {
+        "value": true,
+        "basis": "observed; strict enforcement not established"
+      },
+      "forced_named_tool_choice": {
+        "value": false,
+        "basis": "observed; Darkbloom returned explicit unsupported tool_choice error"
+      },
+      "automatic_tool_choice": {
+        "value": true,
+        "reason": null,
+        "basis": "observed; returned the requested function name and arguments in one saved automatic-selection example",
+        "evidence": "results/qualification/20260915T141644Z-573acb65/tool_calling_auto/darkbloom.json"
+      },
+      "batch_inference_api": {
+        "value": null,
+        "reason": "No exact-endpoint batch API verified"
+      },
+      "serving_region": {
+        "value": null,
+        "reason": "Not returned in normal response records"
+      },
+      "rate_limits": {
+        "value": null,
+        "reason": "Consult per-response headers and qualification notes; no universal entitlement inferred"
+      },
+      "capability_evidence": "results/qualification/20260915T141606Z-48abc627/summary.json",
+      "manual_review": "notes/qualification/darkbloom.md"
+    },
+    "ionet": {
+      "provider_model_id": "Qwen/Qwen3.8-27B",
+      "catalog_source": "config/pricing-history/20260915T141555Z-c6a42dba/ionet.json",
+      "authentication": {
+        "value": "Bearer API key",
+        "basis": "observed"
+      },
+      "streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "non_streaming": {
+        "value": true,
+        "basis": "observed"
+      },
+      "structured_output_example": {
+        "value": true,
+        "basis": "observed; strict enforcement not established"
+      },
+      "forced_named_tool_choice": {
+        "value": true,
+        "basis": "observed; returned the requested function name and arguments in one saved example"
+      },
+      "automatic_tool_choice": {
+        "value": null,
+        "reason": "Not separately probed"
+      },
+      "batch_inference_api": {
+        "value": null,
+        "reason": "No exact-endpoint batch API verified"
+      },
+      "serving_region": {
+        "value": null,
+        "reason": "Not returned in normal response records"
+      },
+      "rate_limits": {
+        "value": null,
+        "reason": "Consult per-response headers and qualification notes; no universal entitlement inferred"
+      },
+      "capability_evidence": "results/qualification/20260915T141606Z-48abc627/summary.json"
+    }
+  }
+}

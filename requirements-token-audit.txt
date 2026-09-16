@@ -1,0 +1,5 @@
+# Optional inherited token-accounting investigation only; not required for Stage 1.
+# These packages were not installed or validated during migration.
+# Versions and tokenizer assets for scored v0.5 measurements will be pinned at Stage 3.
+tokenizers
+jinja2

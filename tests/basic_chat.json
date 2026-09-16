@@ -1,0 +1,51 @@
+{
+  "name": "basic_chat",
+  "version": "0.1",
+  "frozen_at": "2026-09-15",
+  "model": "qwen/qwen3.8-27b",
+  "providers": ["venice", "chutes", "darkbloom"],
+  "provider_model_ids": {
+    "venice": "qwen-3-8-27b",
+    "chutes": "Qwen/Qwen3.8-27B-TEE",
+    "darkbloom": "EigenLabs/Qwen3.8-27B-4bit-mtp"
+  },
+  "settings": {
+    "temperature": 0,
+    "top_p": 1,
+    "max_tokens": 2048,
+    "stream": true,
+    "timeout_seconds": 180,
+    "pause_between_requests_seconds": 2,
+    "repetitions": 1,
+    "concurrency": 1
+  },
+  "cases": [
+    {
+      "name": "short_factual",
+      "messages": [
+        {
+          "role": "user",
+          "content": "How many minutes are in one hour? Reply with exactly: 60 minutes."
+        }
+      ]
+    },
+    {
+      "name": "medium_explanation",
+      "messages": [
+        {
+          "role": "user",
+          "content": "In 100 to 130 words, explain to a beginner why keeping a separate backup copy of an important document is useful. Include one everyday example, explain how a backup differs from simply renaming the original file, and mention one limitation of backups. Give only the explanation as one paragraph, with no title or bullet list."
+        }
+      ]
+    },
+    {
+      "name": "longer_generation",
+      "messages": [
+        {
+          "role": "user",
+          "content": "Write a fictional story of 300 to 350 words in exactly four paragraphs. A neighborhood opens a small lending library in an unused garden shed. On opening morning, rain reveals a leak in the roof. Follow one volunteer as the neighbors solve the problem together and open the library later that day. Use a calm, hopeful tone, include a brief exchange of dialogue, and end with a child choosing the first book. Give only the story, with no title or commentary."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "_synthetic_fixture": true,
+  "_fixture_note": "SYNTHETIC TEST FIXTURE. Invented values, not a real provider run.",
+  "run_id": "synthetic-legacy-summary",
+  "complete": true,
+  "expected_observations": 2,
+  "saved_observations": 2,
+  "successful_observations": 1,
+  "observations": [
+    {
+      "provider": "chutes",
+      "success": true,
+      "record": "PRIVATE_RECORD_PATH/observation.json",
+      "ttft_seconds": 0,
+      "total_latency_seconds": 2,
+      "output_tokens_per_second": 8,
+      "input_tokens": 10,
+      "output_tokens": 8,
+      "reasoning_tokens": 0,
+      "input_price_per_1m": 0,
+      "output_price_per_1m": 0,
+      "input_cost": 0,
+      "output_cost": 0,
+      "request_cost": 0
+    },
+    {
+      "provider": "venice",
+      "success": false,
+      "finish_reason": null,
+      "ttft_seconds": null,
+      "total_latency_seconds": 0.5,
+      "request_cost": null,
+      "error_message": "PRIVATE_ERROR_MESSAGE",
+      "record": "PRIVATE_RECORD_PATH/missing.json"
+    }
+  ]
+}

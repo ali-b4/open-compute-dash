@@ -1,0 +1,347 @@
+{
+  "manifest_version": "source-migration-v1",
+  "created_at": "2026-09-16T16:36:26.945369+00:00",
+  "source_repository": "https://github.com/ali-b4/provider-eval-v0.1",
+  "source_directory_relative": "../provider-eval-v0.1",
+  "source_commit": "00875118f71d40cce7d59a95ea4488173ed5c3f8",
+  "source_working_tree_clean": false,
+  "source_working_tree_status": [
+    " M README.md",
+    " M config/pricing.json",
+    " M notes/metrics.md",
+    " M providers/base.py",
+    " M providers/chutes.py",
+    " M providers/darkbloom.py",
+    " M providers/ionet.py",
+    " M providers/venice.py",
+    " M scripts/manual_request.py",
+    " M scripts/measurements.py",
+    " M scripts/render_report.py",
+    " M scripts/run_benchmark.py",
+    " M tests/basic_chat.json",
+    " M tests/test_measurements.py",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/chutes.json",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/darkbloom.json",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/ionet.json",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/previous-pricing.json",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/pricing.json",
+    "?? config/pricing-history/20260915T141555Z-c6a42dba/venice.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/chutes.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/darkbloom.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/ionet.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/previous-pricing.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/pricing.json",
+    "?? config/pricing-history/20260915T142241Z-9af7b573/venice.json",
+    "?? config/pricing-history/20260915T145335Z-553d1180/chutes.json",
+    "?? config/pricing-history/20260915T145335Z-553d1180/darkbloom.json",
+    "?? config/pricing-history/20260915T145335Z-553d1180/previous-pricing.json",
+    "?? config/pricing-history/20260915T145335Z-553d1180/pricing.json",
+    "?? config/pricing-history/20260915T145335Z-553d1180/venice.json",
+    "?? config/pricing-history/20260915T151021Z-73a37b1f/chutes.json",
+    "?? config/pricing-history/20260915T151021Z-73a37b1f/darkbloom.json",
+    "?? config/pricing-history/20260915T151021Z-73a37b1f/previous-pricing.json",
+    "?? config/pricing-history/20260915T151021Z-73a37b1f/pricing.json",
+    "?? config/pricing-history/20260915T151021Z-73a37b1f/venice.json",
+    "?? config/qualification.json",
+    "?? notes/benchmark-guide.md",
+    "?? notes/provider-qualification.md",
+    "?? notes/qualification/chutes.md",
+    "?? notes/qualification/darkbloom.md",
+    "?? notes/qualification/venice.md",
+    "?? notes/token-accounting.md",
+    "?? results/accounting/20260915T140959Z-d5e18993/audit.json",
+    "?? results/accounting/20260915T140959Z-d5e18993/baseline/report.html",
+    "?? results/accounting/20260915T140959Z-d5e18993/baseline/venice.json",
+    "?? results/accounting/20260915T140959Z-d5e18993/index.html",
+    "?? results/accounting/20260915T140959Z-d5e18993/reasoning_medium/report.html",
+    "?? results/accounting/20260915T140959Z-d5e18993/reasoning_medium/venice.json",
+    "?? results/accounting/20260915T140959Z-d5e18993/reasoning_xhigh/report.html",
+    "?? results/accounting/20260915T140959Z-d5e18993/reasoning_xhigh/venice.json",
+    "?? results/accounting/20260915T140959Z-d5e18993/system_prompt_on/report.html",
+    "?? results/accounting/20260915T140959Z-d5e18993/system_prompt_on/venice.json",
+    "?? results/accounting/20260915T141115Z-82c7a51c/audit.json",
+    "?? results/accounting/20260915T141115Z-82c7a51c/index.html",
+    "?? results/accounting/20260915T141718Z-95d2bab6/audit.json",
+    "?? results/accounting/20260915T141718Z-95d2bab6/index.html",
+    "?? results/accounting/tokenizer/chat_template.jinja",
+    "?? results/accounting/tokenizer/manifest.json",
+    "?? results/accounting/tokenizer/tokenizer.json",
+    "?? results/accounting/tokenizer/tokenizer_config.json",
+    "?? results/qualification/20260915T141606Z-48abc627/index.html",
+    "?? results/qualification/20260915T141606Z-48abc627/structured_output/chutes.json",
+    "?? results/qualification/20260915T141606Z-48abc627/structured_output/darkbloom.json",
+    "?? results/qualification/20260915T141606Z-48abc627/structured_output/ionet.json",
+    "?? results/qualification/20260915T141606Z-48abc627/structured_output/report.html",
+    "?? results/qualification/20260915T141606Z-48abc627/structured_output/venice.json",
+    "?? results/qualification/20260915T141606Z-48abc627/summary.json",
+    "?? results/qualification/20260915T141606Z-48abc627/tool_calling/chutes.json",
+    "?? results/qualification/20260915T141606Z-48abc627/tool_calling/darkbloom.json",
+    "?? results/qualification/20260915T141606Z-48abc627/tool_calling/ionet.json",
+    "?? results/qualification/20260915T141606Z-48abc627/tool_calling/report.html",
+    "?? results/qualification/20260915T141606Z-48abc627/tool_calling/venice.json",
+    "?? results/qualification/20260915T141644Z-573acb65/index.html",
+    "?? results/qualification/20260915T141644Z-573acb65/summary.json",
+    "?? results/qualification/20260915T141644Z-573acb65/tool_calling_auto/darkbloom.json",
+    "?? results/qualification/20260915T141644Z-573acb65/tool_calling_auto/report.html",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-non-streaming/chutes.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-non-streaming/darkbloom.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-non-streaming/ionet.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-non-streaming/report.html",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-non-streaming/venice.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-streaming/chutes.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-streaming/ionet.json",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-streaming/report.html",
+    "?? results/raw/20260915T141555Z-1697a35f/basic_chat-r1-streaming/venice.json",
+    "?? results/raw/20260915T141555Z-1697a35f/manifest.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-non-streaming/chutes.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-non-streaming/darkbloom.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-non-streaming/ionet.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-non-streaming/report.html",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-non-streaming/venice.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-streaming/chutes.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-streaming/ionet.json",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-streaming/report.html",
+    "?? results/raw/20260915T141555Z-1697a35f/reasoning_chat-r1-streaming/venice.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-non-streaming/chutes.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-non-streaming/darkbloom.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-non-streaming/ionet.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-non-streaming/report.html",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-non-streaming/venice.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-streaming/chutes.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-streaming/ionet.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-streaming/report.html",
+    "?? results/raw/20260915T142241Z-6dfbbf32/basic_chat-r1-streaming/venice.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/manifest.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-non-streaming/chutes.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-non-streaming/darkbloom.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-non-streaming/ionet.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-non-streaming/report.html",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-non-streaming/venice.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-streaming/chutes.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-streaming/ionet.json",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-streaming/report.html",
+    "?? results/raw/20260915T142241Z-6dfbbf32/reasoning_chat-r1-streaming/venice.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/longer_generation-r1-streaming/chutes.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/longer_generation-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/longer_generation-r1-streaming/report.html",
+    "?? results/raw/20260915T145335Z-cbd77e7c/longer_generation-r1-streaming/venice.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/manifest.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/medium_explanation-r1-streaming/chutes.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/medium_explanation-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/medium_explanation-r1-streaming/report.html",
+    "?? results/raw/20260915T145335Z-cbd77e7c/medium_explanation-r1-streaming/venice.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/short_factual-r1-streaming/chutes.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/short_factual-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/short_factual-r1-streaming/report.html",
+    "?? results/raw/20260915T145335Z-cbd77e7c/short_factual-r1-streaming/venice.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/workload.json",
+    "?? results/raw/20260915T145335Z-cbd77e7c/workload.sha256",
+    "?? results/raw/20260915T151021Z-18d779c8/longer_generation-r1-streaming/chutes.json",
+    "?? results/raw/20260915T151021Z-18d779c8/longer_generation-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T151021Z-18d779c8/longer_generation-r1-streaming/report.html",
+    "?? results/raw/20260915T151021Z-18d779c8/longer_generation-r1-streaming/venice.json",
+    "?? results/raw/20260915T151021Z-18d779c8/manifest.json",
+    "?? results/raw/20260915T151021Z-18d779c8/medium_explanation-r1-streaming/chutes.json",
+    "?? results/raw/20260915T151021Z-18d779c8/medium_explanation-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T151021Z-18d779c8/medium_explanation-r1-streaming/report.html",
+    "?? results/raw/20260915T151021Z-18d779c8/medium_explanation-r1-streaming/venice.json",
+    "?? results/raw/20260915T151021Z-18d779c8/short_factual-r1-streaming/chutes.json",
+    "?? results/raw/20260915T151021Z-18d779c8/short_factual-r1-streaming/darkbloom.json",
+    "?? results/raw/20260915T151021Z-18d779c8/short_factual-r1-streaming/report.html",
+    "?? results/raw/20260915T151021Z-18d779c8/short_factual-r1-streaming/venice.json",
+    "?? results/raw/20260915T151021Z-18d779c8/workload.json",
+    "?? results/raw/20260915T151021Z-18d779c8/workload.sha256",
+    "?? results/summary/20260915T141555Z-1697a35f/index.html",
+    "?? results/summary/20260915T141555Z-1697a35f/summary.json",
+    "?? results/summary/20260915T142241Z-6dfbbf32/index.html",
+    "?? results/summary/20260915T142241Z-6dfbbf32/summary.json",
+    "?? results/summary/20260915T145335Z-cbd77e7c/index.html",
+    "?? results/summary/20260915T145335Z-cbd77e7c/summary.json",
+    "?? results/summary/20260915T151021Z-18d779c8/index.html",
+    "?? results/summary/20260915T151021Z-18d779c8/summary.json",
+    "?? scripts/audit_tokens.py",
+    "?? scripts/qualify_providers.py",
+    "?? scripts/refresh_pricing.py",
+    "?? tests/basic_chat.sha256",
+    "?? tests/reasoning_chat.json",
+    "?? tests/test_benchmark.py",
+    "?? tests/test_frozen_workload.py",
+    "?? tests/test_pricing_refresh.py",
+    "?? tests/test_qualification.py",
+    "?? tests/test_token_audit.py"
+  ],
+  "copied_file_count": 35,
+  "copied_files": [
+    {
+      "path": ".env.example",
+      "sha256": "030a242b4cb7fe1197fb2d1d9e329bf4e678e2d045bed8b188a49a3a9328780d"
+    },
+    {
+      "path": "config/pricing.json",
+      "sha256": "6aa9a9f60bb3c1b789b2f7548452518d5ccb4ed59e802c1fe695cf371b974c40"
+    },
+    {
+      "path": "config/qualification.json",
+      "sha256": "2829e65efb7465176d7ff3e875e6595350b0cb2f943588f3cb5eb48696d7d968"
+    },
+    {
+      "path": "providers/base.py",
+      "sha256": "96e2ca8ecfd1cb4d32bde4de198f4c6f421f660a59ec9923846914c1555bc5e7"
+    },
+    {
+      "path": "providers/chutes.py",
+      "sha256": "f7dae4c416be5fa9da042e483be0b9de9179e5f5d7673206b1f1ac05b53f82f0"
+    },
+    {
+      "path": "providers/darkbloom.py",
+      "sha256": "1cb35cf0e7142d1a33a80caaa8ce96cd66dbc5406898eb7665381598ddebe9e5"
+    },
+    {
+      "path": "providers/ionet.py",
+      "sha256": "6cc90a0ecfe558725cccd263126c57d20c4c3ad405dcb399827da81fd4e2d5c4"
+    },
+    {
+      "path": "providers/venice.py",
+      "sha256": "6790da5ed96f020ce95eae522ce27267f6fdfb23a2748c7d4dcd5202e2daf36e"
+    },
+    {
+      "path": "scripts/audit_tokens.py",
+      "sha256": "ab4d1d47b311943732361eb1b8879145a8e081eafc3b846483b48d0065335dc2"
+    },
+    {
+      "path": "scripts/chutes_raw_request.py",
+      "sha256": "0862954664bbc73c45669cd3f493bbbd2f085c532b5e5cb27e71eb212d996f13"
+    },
+    {
+      "path": "scripts/darkbloom_raw_request.py",
+      "sha256": "791a62ad637cfed8b896ab429589bef5d1c22b760a700eb0e085dc09046bf13f"
+    },
+    {
+      "path": "scripts/manual_request.py",
+      "sha256": "4da96d8055ba3fee295a753763a6f99772e5de736439d184d4446761b792f885"
+    },
+    {
+      "path": "scripts/measurements.py",
+      "sha256": "bcae29601e5bfd02a5af48cec3fa32544692589ad9a6f4a9e6aaaccca5b34c0b"
+    },
+    {
+      "path": "scripts/provider_config.py",
+      "sha256": "056852ba373cc19235563016ddec7129bd3d0210179b9579258c59441a559f3b"
+    },
+    {
+      "path": "scripts/qualify_providers.py",
+      "sha256": "2b1d3bc3e14ebcf3400f77002e2e19ec1e9d9a6cd0f081eec987e70ac0013a5c"
+    },
+    {
+      "path": "scripts/raw_request.py",
+      "sha256": "d0aabeb2e0a04bf76a2b3ce91075e6211869af7b1a2b77e3d1f2b203cd0440e7"
+    },
+    {
+      "path": "scripts/refresh_pricing.py",
+      "sha256": "498efed0a216b0030df0a338804d8b4e165b0bf79e4dc63d4180314013d89a7a"
+    },
+    {
+      "path": "scripts/render_report.py",
+      "sha256": "39925deb59ccd0089521adb6a591903c2bffe06297dada2f2ab4169ca15c111e"
+    },
+    {
+      "path": "scripts/run_benchmark.py",
+      "sha256": "8c93e1a2d048779c7a819dee287e6b6978502071af7179c0c969979dbedb8074"
+    },
+    {
+      "path": "scripts/streaming.py",
+      "sha256": "4ef693344353b7fb59f3964847cfee684345c4951863e9d62dbd7de369e47b31"
+    },
+    {
+      "path": "scripts/validate_failures.py",
+      "sha256": "dc7f85aba79c6376f76e45ad918446aacd860a0c14de30373f2d4f98187cfc6e"
+    },
+    {
+      "path": "scripts/venice_raw_request.py",
+      "sha256": "c7ab407afbc8d0d9e4506224c87b41c55be90f6b72d8265bf49507f4686c0f50"
+    },
+    {
+      "path": "tests/basic_chat.json",
+      "sha256": "7821964d318ac61c4857c55f85ec8959cea4428b3e1617c6416c796eba6616a7"
+    },
+    {
+      "path": "tests/basic_chat.sha256",
+      "sha256": "ce907bbe45dc8f929becf2ac4d2edd698d5ad96d90277a5bacd450c68a80c1bd"
+    },
+    {
+      "path": "tests/reasoning_chat.json",
+      "sha256": "879fce4e439c34bd54507d8a87f50509ff4ab78153bc4001dd81e43aed824b2f"
+    },
+    {
+      "path": "tests/test_benchmark.py",
+      "sha256": "a18902df40d37708005dbba2af28849e59d8c3751e2cd8f8121e4d7918c1e94e"
+    },
+    {
+      "path": "tests/test_failure_validation.py",
+      "sha256": "189fd56844ae31a14544ee169a2c22d37c5b5e508fdedbbc36681da155d9b3e4"
+    },
+    {
+      "path": "tests/test_frozen_workload.py",
+      "sha256": "0fbfaed6f99b826714cd09165db47d2cabf106f2b74708ced9030218eb49f0fe"
+    },
+    {
+      "path": "tests/test_ionet.py",
+      "sha256": "14cd37628d8d6dcee1d51422fe28398f3794b7d8dfe3c07142b55df8020c07d2"
+    },
+    {
+      "path": "tests/test_manual_request.py",
+      "sha256": "098e8388ebd93dc3d2f333eff16812a6c8dcc5037e1247dd342af49553d3cf76"
+    },
+    {
+      "path": "tests/test_measurements.py",
+      "sha256": "bd0ac957a4a41b296292979fe8d9cbef9b0b29f50a04875294ed096e65c78b89"
+    },
+    {
+      "path": "tests/test_pricing_refresh.py",
+      "sha256": "7e59226f9e9e9bfb8487ace848b21c02b3ee0e4c469e1dff470145f8455750d5"
+    },
+    {
+      "path": "tests/test_qualification.py",
+      "sha256": "8510171492bf4885b01eddbe4dee524a6d10f64e14479f2e4a9f566b3915c083"
+    },
+    {
+      "path": "tests/test_raw_request.py",
+      "sha256": "ab9e9cd000acfac6f5d5d793a9e0bf0914ccbc3469ca5e93aad2377e7b26b829"
+    },
+    {
+      "path": "tests/test_token_audit.py",
+      "sha256": "2417ea33cb88d5fff743144a53e8c5c315ce83e9ded29745b8d191f1c4aeb7c7"
+    }
+  ],
+  "copy_policy": "Selected current working files copied byte-for-byte, including modified and untracked source. No Git metadata, secrets, raw results, private notes, catalogs, history archives, or tokenizer assets copied.",
+  "historical_evidence_policy": "Original records and evidence remain in the baseline. Links inside copied pricing/qualification configuration refer to that baseline; they are not newly verified evidence.",
+  "baseline_verification": {
+    "status": "passed",
+    "fingerprinted_file_count": 281,
+    "excluded": [
+      ".git/",
+      "__pycache__/",
+      ".venv/",
+      ".env and non-example variants"
+    ],
+    "verified_at": "2026-09-16T16:41:47.453336+00:00",
+    "all_fingerprinted_files_unchanged": true,
+    "git_head_and_working_tree_status_unchanged": true,
+    "fingerprint_index_sha256": "0ab4c0d864472042d684ece6725e6b4935e5fe74e2bfb94f6a4c1c0c104bd7a4",
+    "copied_files_verified": 35
+  },
+  "offline_verification": {
+    "python_version": "3.14.5",
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 -B -m unittest discover -s tests -v -b",
+    "tests_passed": 50,
+    "inherited_tests": 41,
+    "new_reader_tests": 9,
+    "live_requests_sent": 0,
+    "legacy_saved_summary_observations": 9,
+    "legacy_saved_summary_values_unchanged": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "model": "qwen/qwen3.8-27b",
+  "venice": {
+    "provider_model_id": "qwen-3-8-27b",
+    "input_per_1m_tokens": 0.45,
+    "output_per_1m_tokens": 3.2,
+    "context_window": 262144,
+    "quantization": "fp8",
+    "source": "https://api.venice.ai/api/v1/models",
+    "checked_at": "2026-09-15T15:10:21.521392+00:00",
+    "cost_basis": "Published token rates; excludes account discounts and non-token charges.",
+    "snapshot": "config/pricing-history/20260915T151021Z-73a37b1f/venice.json"
+  },
+  "chutes": {
+    "provider_model_id": "Qwen/Qwen3.8-27B-TEE",
+    "input_per_1m_tokens": 0.32,
+    "output_per_1m_tokens": 2.5,
+    "context_window": 262144,
+    "quantization": "fp8",
+    "source": "https://llm.chutes.ai/v1/models",
+    "checked_at": "2026-09-15T15:10:21.521392+00:00",
+    "cost_basis": "Published token rates; excludes account discounts and non-token charges.",
+    "snapshot": "config/pricing-history/20260915T151021Z-73a37b1f/chutes.json",
+    "cache_input_per_1m_tokens": 0.031999999999999994
+  },
+  "darkbloom": {
+    "provider_model_id": "EigenLabs/Qwen3.8-27B-4bit-mtp",
+    "input_per_1m_tokens": 0.15,
+    "output_per_1m_tokens": 2.0,
+    "context_window": 262144,
+    "quantization": "int4",
+    "source": "https://api.darkbloom.dev/v1/models",
+    "checked_at": "2026-09-15T15:10:21.521392+00:00",
+    "cost_basis": "Published standard direct-consumer rates with $0.0001 minimum; service accounts and custom rates may differ.",
+    "minimum_request_cost_usd": 0.0001,
+    "billing_source": "https://github.com/Layr-Labs/d-inference/blob/master/docs/reference/pricing-model.md",
+    "snapshot": "config/pricing-history/20260915T151021Z-73a37b1f/darkbloom.json"
+  },
+  "ionet": {
+    "provider_model_id": "Qwen/Qwen3.8-27B",
+    "input_per_1m_tokens": 0.308,
+    "output_per_1m_tokens": 2.73,
+    "context_window": 65536,
+    "quantization": "fp8",
+    "source": "https://api.intelligence.io.solutions/api/v1/models",
+    "checked_at": "2026-09-15T14:22:40.636684+00:00",
+    "cost_basis": "Published per-token catalog rates converted to USD per million tokens; excludes account discounts and non-token charges.",
+    "snapshot": "config/pricing-history/20260915T142241Z-9af7b573/ionet.json",
+    "cache_input_per_1m_tokens": 0.154
+  }
+}

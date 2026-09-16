@@ -1,0 +1,8 @@
+{
+  "name": "reasoning_chat",
+  "model": "qwen/qwen3.8-27b",
+  "providers": ["venice", "chutes", "darkbloom", "ionet"],
+  "messages": [
+    {"role": "user", "content": "A shop has 12 apples, sells 5, and receives 8 more. How many apples does it have? Answer with the number and one short sentence."}
+  ]
+}

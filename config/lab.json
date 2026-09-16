@@ -1,0 +1,15 @@
+{
+  "schema_version": "lab-config-v1",
+  "project": "provider-qualification-lab",
+  "software_version": "0.5.0.dev1",
+  "implementation_stage": 1,
+  "status": "migration_only",
+  "canonical_model_family": "qwen/qwen3.8-27b",
+  "legacy_record_format": "v0.1-unversioned",
+  "legacy_workload_version": "0.1",
+  "implemented_benchmark_methodology": "legacy-v0.1",
+  "implemented_scoring_versions": [],
+  "planned_scoring_version": "aps-r2",
+  "source_migration_manifest": "docs/migration-manifest.json",
+  "configuration_role": "Project metadata only; inherited scripts retain their existing controls. This file is not a live-run approval or budget control."
+}

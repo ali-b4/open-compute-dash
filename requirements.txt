@@ -1,0 +1,3 @@
+# Python 3.10 or newer.
+# The migrated benchmark, legacy reader, and offline tests use only the standard library.
+# No third-party runtime or test packages are required at Stage 1.

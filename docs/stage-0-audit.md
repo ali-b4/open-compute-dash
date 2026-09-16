@@ -1,6 +1,8 @@
 # Stage 0 review — Provider Qualification Lab v0.5
 
-Date: 2026-09-16. Status: **awaiting owner review**.
+Date: 2026-09-16. Status: **approved by owner** after review and commit `e3d04ff212cbe141d66f47e6b399802a4e6c9b7c`.
+
+The findings and proposal below record the Stage 0 checkpoint. The owner approved proceeding with Stage 1 in this repository; see [current progress](lab-progress.md).
 
 The existing lab is a usable starting point: all 41 offline tests pass. The website already has the required public route and passes its 11 tests, type check, and lint check. The next increment is a careful migration of the lab; new benchmark behavior comes after that review.
 
